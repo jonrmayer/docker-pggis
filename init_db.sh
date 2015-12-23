@@ -17,6 +17,7 @@ echo "PostgreSQL running, initializing database."
 # create postgresql user pggis
 
 /sbin/setuser postgres /usr/bin/psql -c "CREATE USER pggis with SUPERUSER PASSWORD 'pggis';"
+/sbin/setuser postgres /usr/bin/psql -c "CREATE USER jmayer with SUPERUSER PASSWORD 'pggis';"
 
 # == Auto restore dumps ==
 #
